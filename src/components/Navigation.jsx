@@ -1,33 +1,40 @@
 import { AppBar, Container, Typography } from "@mui/material";
 
 function Navigation() {
+  const backgroundColor = "rgba(255, 0, 255, .75)";
+
   return (
     <AppBar
       position="fixed"
-      className="appBar"
       sx={{
-        backgroundColor: "rgba(255, 0, 255, .7)",
+        backgroundColor: { backgroundColor },
         paddingTop: ".5em",
         paddingBottom: ".5em",
       }}
     >
-      <Container>
+      <Container
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+        }}
+      >
+        <img className="logo" src={process.env.PUBLIC_URL + "/favicon.ico"} />
         <Typography
-          variant="h6"
+          variant="h4"
           noWrap
           component="a"
-          href="/"
+          href="/Portfolio-2023"
           sx={{
+            paddingLeft: ".5em",
             mr: 2,
             display: { xs: "none", md: "flex" },
             fontFamily: "monospace",
             fontWeight: 700,
             letterSpacing: ".3rem",
-            color: "inherit",
+            color: "black",
             textDecoration: "none",
           }}
         >
-          <img className="logo" src={process.env.PUBLIC_URL + "/favicon.ico"} />
           Jason Horst
         </Typography>
       </Container>

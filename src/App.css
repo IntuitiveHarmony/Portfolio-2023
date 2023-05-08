@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   position: relative;
 }
+/* this is for opaque filter over the body's background */
 .App::after {
   background: url('https://mj-gallery.com/566ba53b-9328-4b06-8ca9-2a3af586e0f2/grid_0.png');
   background-repeat: repeat;
@@ -21,7 +22,7 @@ body {
   z-index: -1;
 }
 .logo {
-  width: 3em;
+  width: 3.5em;
   filter: hue-rotate(0deg), saturate(700);
   animation: rotate-colors 9s linear infinite;
 }

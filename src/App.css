@@ -39,6 +39,9 @@ table {
 body {
   background-color: black;
 }
+a {
+  text-decoration: none;
+}
 .App {
   display: flex;
   flex-direction: column;

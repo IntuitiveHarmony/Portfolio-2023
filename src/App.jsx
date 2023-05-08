@@ -1,18 +1,14 @@
 import "./App.css";
-import { Routes } from "react-router-dom";
-import Navigation from "./components/Navigation";
-import Home from "./components/Home";
+import Navigation from "./components/Navigation/Navigation";
+import Content from "./components/Content/Content";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
-      {/* <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="*" component={Home} />
-        </Switch>
-      </Router> */}
+      <Content />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.footer {
+  width: 100vw;
+  font-size: .85em;
+  display: flex;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  flex-direction: row-reverse;
+  padding-right: 1em;
+  color: rgb(0, 180, 255);
+  background-color: rgba(80, 16, 81, 1);
+  position: relative;
+  /* bottom: 0; */
+}

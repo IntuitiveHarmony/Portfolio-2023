@@ -1,0 +1,9 @@
+.contentContainer {
+  background-color: rgba(0, 255, 255, 0.7);
+  margin: 1em;
+  flex: 1;
+  /* height: 100em; */
+}
+.content {
+  height: 200em;
+}

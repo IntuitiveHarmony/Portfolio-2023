@@ -1,0 +1,15 @@
+.logo {
+  width: 3.5em;
+  filter: hue-rotate(0deg), saturate(700);
+  animation: rotate-colors 9s linear infinite;
+}
+
+@keyframes rotate-colors {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg);
+  }
+}

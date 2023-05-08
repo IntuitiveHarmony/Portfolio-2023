@@ -1,3 +1,4 @@
+import "./Navigation.css";
 import { AppBar, Container, Typography } from "@mui/material";
 
 function Navigation() {
@@ -7,6 +8,9 @@ function Navigation() {
     <AppBar
       position="fixed"
       sx={{
+        top: 0,
+        position: "sticky",
+        zIndex: 1,
         backgroundColor: { backgroundColor },
         paddingTop: ".5em",
         paddingBottom: ".5em",
@@ -27,10 +31,10 @@ function Navigation() {
           sx={{
             paddingLeft: ".5em",
             mr: 2,
-            display: { xs: "none", md: "flex" },
+            display: { md: "flex" },
             fontFamily: "monospace",
             fontWeight: 700,
-            letterSpacing: ".3rem",
+            letterSpacing: ".1rem",
             color: "black",
             textDecoration: "none",
           }}

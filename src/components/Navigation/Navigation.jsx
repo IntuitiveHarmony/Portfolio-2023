@@ -34,28 +34,29 @@ function Navigation() {
         sx={{
           display: "flex",
           flexDirection: "row",
-          alignItems: "center",
           flexGrow: 1,
         }}
       >
         <img className="logo" src={process.env.PUBLIC_URL + "/favicon.ico"} />
         <Typography
-          variant="h4"
-          noWrap
+          variant="h6"
+          // noWrap
           component="a"
           href="/Portfolio-2023"
           sx={{
             paddingLeft: ".3em",
             mr: 2,
+            width: "7em",
             display: { md: "flex" },
             fontFamily: "monospace",
             fontWeight: 700,
             letterSpacing: ".1rem",
+            lineHeight: ".75em",
             color: "black",
             textDecoration: "none",
           }}
         >
-          Jason Horst
+          Intuitive Harmony
         </Typography>
         <Box
           sx={{
@@ -64,6 +65,7 @@ function Navigation() {
             // justifyContent: "flex-end",
             alignItems: "center",
             alignSelf: "flex-end",
+            margin: 0,
           }}
         >
           <IconButton
@@ -72,7 +74,10 @@ function Navigation() {
             aria-controls="menu-appbar"
             aria-haspopup="true"
             // onClick={handleOpenNavMenu}
-            sx={{ color: linkColor }}
+            sx={{
+              color: linkColor,
+              padding: 0,
+            }}
           >
             {collapseMenu ? (
               <i

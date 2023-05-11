@@ -28,6 +28,8 @@ function Navigation() {
         backgroundColor: { backgroundColor },
         paddingTop: ".5em",
         paddingBottom: ".5em",
+        display: "flex",
+        alignItems: "center",
       }}
     >
       <Container
@@ -35,14 +37,14 @@ function Navigation() {
           display: "flex",
           flexDirection: "row",
           flexGrow: 1,
+          alignItems: "center",
         }}
       >
         <img className="logo" src={process.env.PUBLIC_URL + "/favicon.ico"} />
         <Typography
-          variant="h6"
-          // noWrap
+          variant="h5"
           component="a"
-          href="/Portfolio-2023"
+          href="/"
           sx={{
             paddingLeft: ".3em",
             mr: 2,
@@ -55,6 +57,7 @@ function Navigation() {
             color: "black",
             textDecoration: "none",
           }}
+          style={{ flexGrow: 1 }}
         >
           Intuitive Harmony
         </Typography>
@@ -77,6 +80,7 @@ function Navigation() {
             sx={{
               color: linkColor,
               padding: 0,
+              alignItems: "center",
             }}
           >
             {collapseMenu ? (

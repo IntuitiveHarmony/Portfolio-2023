@@ -51,7 +51,7 @@ function Navigation() {
             fontFamily: "monospace",
             fontWeight: 700,
             letterSpacing: ".1rem",
-            lineHeight: ".75em",
+            lineHeight: ".9em",
             color: "black",
             textDecoration: "none",
           }}
@@ -80,12 +80,17 @@ function Navigation() {
             }}
           >
             {collapseMenu ? (
+              // hamburger menu
               <i
                 className="fa-solid fa-bars menu-icon"
                 onClick={() => handleCollapseMenu()}
               ></i>
             ) : (
-              <i class="fa-solid fa-x" onClick={() => handleCollapseMenu()}></i>
+              // close menu X
+              <i
+                className="fa-solid fa-x"
+                onClick={() => handleCollapseMenu()}
+              ></i>
             )}
           </IconButton>
         </Box>
